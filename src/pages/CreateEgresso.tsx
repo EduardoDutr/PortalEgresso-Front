@@ -41,8 +41,8 @@ function CreateEgresso() {
 
     return (
         <Layout>
-            <div className="flex flex-col gap-8 items-center justify-center">
-                <h1 className="text-black">Criar Egresso</h1>
+            <div className="flex flex-col gap-8 items-center justify-center text-black">
+                <h1>Criar Egresso</h1>
                 {!isAuthenticated && <span className="p-0 text-red-600">Egresso precisara ser aprovado</span>}
                 <div className="flex flex-col gap-4">
                     <input

@@ -28,8 +28,8 @@ function CreateCurso({ setReload }: CreateCursoProps) {
     };
 
     return (
-        <div className="flex flex-col gap-8 items-center justify-center mt-5">
-            <h1 className="text-black">Criar Novo Curso</h1>
+        <div className="flex flex-col gap-8 items-center justify-center mt-5 text-black">
+            <h1>Criar Novo Curso</h1>
             <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                 <label className="text-gray-700" htmlFor="nome">
                     Nome do Curso

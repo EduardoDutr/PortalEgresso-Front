@@ -43,8 +43,8 @@ function SearchEgressos() {
 
     return (
         <Layout>
-            <div className="flex flex-col gap-8">
-                <h1 className="text-black">Selecione uma opção</h1>
+            <div className="flex flex-col gap-8 text-black">
+                <h1>Selecione uma opção</h1>
                 <div className="flex gap-5 justify-center">
                     <button
                         onClick={() => setCurrentSearchType("obterPorAno")}
@@ -71,7 +71,7 @@ function SearchEgressos() {
                             />
                         ) : (
                             <select
-                                className="p-2 rounded-md h-11 w-36"
+                                className="p-2 rounded-md h-11 w-36 bg-slate-50"
                                 value={selectedCurso || ""}
                                 onChange={(e) => setSelectedCurso(e.target.value)}
                             >

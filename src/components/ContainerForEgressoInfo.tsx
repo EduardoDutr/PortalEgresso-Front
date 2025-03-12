@@ -61,7 +61,7 @@ function ContainerForEgressoInfo(egresso: Egresso) {
                 </>
             )}
             <div className="p-5 rounded-xl h-64 w-64 border mx-auto"></div>
-            <div className="flex flex-col gap-2 text-left w-full py-2">
+            <div className="flex flex-col gap-2 text-left w-full py-2 text-black">
                 <div className="text-3xl mx-auto py-2">
                     {egresso.nome}
                 </div>

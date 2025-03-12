@@ -34,8 +34,8 @@ function Login() {
 
     return (
         <Layout>
-            <div className="flex flex-col gap-8 items-center justify-center mt-10">
-                <h1 className="text-black">Login</h1>
+            <div className="flex flex-col gap-8 items-center justify-center mt-10 text-black">
+                <h1>Login</h1>
                 <div className="flex flex-col gap-4">
                     <input
                         type="email"

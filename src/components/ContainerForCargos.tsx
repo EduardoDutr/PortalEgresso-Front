@@ -23,7 +23,7 @@ function ContainerForCargos({ egressoId }: ContainerForCargosProps) {
 
     async function handleDelete(cargoId: number) {
         try {
-            await api.get("cargo/deletar/" + cargoId);
+            await api.delete("cargo/deletar/" + cargoId);
             setCargos(prevCargos => prevCargos.filter(cargo => cargo.id !== cargoId));
         } catch (error) {
             console.error("Erro ao deletar cargo:", error);

@@ -37,7 +37,7 @@ function OportunitiesPanel() {
                     <div key={oportunidade.id} className="p-4 bg-white rounded-lg shadow-md">
                         <h3 className="text-xl font-bold text-black">{oportunidade.titulo}</h3>
                         <p className="text-gray-600">{oportunidade.descricao}</p>
-                        <a href={oportunidade.link} target="_blank" rel="noopener noreferrer" className="text-blue-500">Saiba mais</a>
+                        <a href={oportunidade.url} target="_blank" rel="noopener noreferrer" className="text-blue-500">Saiba mais</a>
                     </div>
                 ))}
             </div>

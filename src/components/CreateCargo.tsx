@@ -40,8 +40,8 @@ function CreateCargo() {
 
     return (
         <Layout>
-            <div className="flex flex-col gap-8 items-center justify-center mt-5">
-                <h1 className="text-black">Criar Novo Cargo</h1>
+            <div className="flex flex-col gap-8 items-center justify-center mt-5 text-black">
+                <h1>Criar Novo Cargo</h1>
                 <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                     <label className="text-gray-700" htmlFor="descricao">
                         Descrição do Cargo

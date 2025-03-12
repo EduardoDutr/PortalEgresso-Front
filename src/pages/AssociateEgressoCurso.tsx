@@ -40,7 +40,6 @@ function AssociateEgressoCurso() {
             setError("Valores de ano de inicio e ano de fim sao invalidos")
             return;
         }
-        console.log(selectedEgresso)
         try {
             await api.post("/curso/associar", {
                 egressoId: selectedEgresso,
@@ -56,14 +55,14 @@ function AssociateEgressoCurso() {
 
     return (
         <Layout>
-            <div className="flex flex-col gap-8 items-center justify-center mt-5">
-                <h1 className="text-black">Associar Egresso a Curso</h1>
+            <div className="flex flex-col gap-8 items-center justify-center mt-5 text-black">
+                <h1>Associar Egresso a Curso</h1>
                 <div className="flex flex-col gap-4">
                     <label className="text-black" htmlFor="egresso">
                         Selecione um Egresso
                     </label>
                     <select
-                        className="p-2 rounded-md h-11 w-72 border"
+                        className="p-2 rounded-md h-11 w-72 border bg-white"
                         value={selectedEgresso}
                         // @ts-ignore
                         onChange={(e) => setSelectedEgresso(e.target.value)}
@@ -81,7 +80,7 @@ function AssociateEgressoCurso() {
                     </label>
 
                     <select
-                        className="p-2 rounded-md h-11 w-72 border"
+                        className="p-2 rounded-md h-11 w-72 border bg-white"
                         value={selectedCurso}
                         onChange={(e) => setSelectedCurso(e.target.value)}
                     >
