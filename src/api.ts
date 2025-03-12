@@ -1,12 +1,14 @@
 import axios from "axios";
 
+const apiUrl = import.meta.env.VITE_BACK_API_URL;
+console.log(apiUrl)
+
 const api = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: apiUrl,
   headers: {
     "Content-Type": "application/json",
   },
 });
-
 // Interceptor para incluir o token automaticamente
 api.interceptors.request.use(
   (config) => {
